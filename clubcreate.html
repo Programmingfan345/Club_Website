@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="club.css" title="style" />
+		<title>Sign Up Page</title>
+	</head>
+	
+	<body>
+		<div class="backgroundmenu">
+			<h2 style="float:left"><a href ="index.html"> Back to Home Page</a></h2>
+			<h2 style="float:right"><a href ="clubcatalog.php"> Back to Club Catalog</a></h2>
+		</div>
+
+		<h1 style="text-align:center">Create a Club!</h1>
+		<h2 style="text-align:center">Welcome!<br> Want to create your own club? Well this is the page for you!<br>Please fill out the following information to get started.</h2>
+
+		<form name="clubinfoForm" id="clubinfoForm" action="clubsubmission.php" method="POST">
+		<div style = "font-weight: bold">
+
+			<!-Allows a user to type the name of their club -->
+			<div style = "clear: both; margin-left: 30%; margin-top: 5px;">Club Name: 
+				<input type = "text" name = "clubname" placeholder="Type the name of your club here" size = "50" maxlength="20" required>
+			</div>
+		
+			<!-Allows a user to type a description for their club -->
+			<div style = "clear: both; margin-left: 30%; margin-top: 5px;">Club Description: 
+				<br>
+				<label>				
+					<textarea name="clubdesc" rows="8" cols="60" placeholder="Provide a description of your club here" required></textarea>
+				</label>
+
+			</div>
+		
+			<!-Allows a user to select a category for their club -->
+			<div style = "clear: both; margin-left: 30%; margin-top: 5px;">
+			<label> Club Category
+   				<select name = "category">
+   				<option value= "acad"> Academic </option>
+   				<option value= "art"> Arts </option>
+   				<option value= "career"> Career </option>
+   				<option value= "cultural"> Cultural </option>
+				<option value= "frat"> Fraternities & Sororities </option>
+   				<option value= "sport"> Sports </option>
+   				<option value= "grad"> Graduate Students </option>
+  				</select>
+			</label>		
+			</div>
+			
+			<!-Allows a user to type the name of their club president -->
+			<div style = "clear: both; margin-left: 30%; margin-top: 5px;">President Name: 
+				<input type = "text" name = "presidentname" placeholder="Type the full name of the president here" size = "50" maxlength="20" required>
+			</div>
+
+			<!-Allows a user to type the president's email -->
+			<div style = "clear: both; margin-left: 30%; margin-top: 5px;">President Email: 
+				<input type = "text" name = "presidentemail" placeholder="Type the president's email here" size = "50" maxlength="20" required>
+			</div>
+			
+			<!-Allows a user to select the days their club will meet -->
+			<div style = "clear: both; margin-left: 30%; margin-top: 5px;">
+			<label> Club Meeting Days
+				<input type = "checkbox" name = "days[]" value="monday"  /> Monday
+				<input type = "checkbox" name = "days[]" value="tuesday"  /> Tuesday
+				<input type = "checkbox" name = "days[]" value="wednesday"  /> Wednesday
+				<input type = "checkbox" name = "days[]" value="thursday"  /> Thursday
+				<input type = "checkbox" name = "days[]" value="friday"  /> Friday
+   			</label>		
+			</div>
+
+		</div>
+		<div style = "clear: both; margin-left: 48%; margin-top: 5px;"><button type="submit" style="padding: 8px 8px; font-weight:bold;">Submit Information</button></div>
+
+
+	</form>
+	</body>
+<html>

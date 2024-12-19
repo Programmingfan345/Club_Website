@@ -1,0 +1,98 @@
+/* Provides a background color to the entire page */
+body{
+	background-color: #FFC196;
+	
+}
+
+/* Provides a background color only for options listed at the top of the page */
+.backgroundmenu{
+	background-color: #BB2649;
+	overflow: auto;
+	
+}
+.results{
+    width: 300px;
+    border-radius: 3px;
+    padding-top: 5px;
+    border: solid thin black;
+    background-color: white;
+    margin-left: 37%;
+}
+
+/* Gives buttons space between images with the margin as well as a readable font size */
+button.caption{
+	margin-top: 10px;
+         font-size: 16px;
+}
+
+/* Gives every button a consistent background color as well as a consistent font color */
+button{
+	background-color: #04AA6D;
+	color: #F5DF4D;
+	
+}
+
+/* Aligns elements to the right */
+.right{
+	text-align: right;
+	margin-right: 30px;
+}
+
+/* Centers elements */
+.center{
+	position: absolute;
+	left: 50%;
+}
+
+/* Creates a sidebar displaying the different categories */
+.sidebar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 170px;
+	height: 100%;
+	background-color: #8bce85;
+}
+
+/* Gives the links inside a sidebar a white font that complements the background color */
+.sidebar a{
+	padding: 5px;
+	display: block;
+	color: white;
+	
+}
+/* Gives the text inside a sidebar a white font that complements the background color */
+.sidebar p{
+	color: white;
+	font-weight: bold;
+}
+
+/* Pushes content to the side to avoid overlapping issues with sidebar */
+.main{
+	margin-left: 170px;
+	
+}
+/* Used to indent an entire section of text boxes and checkmarks simultaneously */
+.indent{
+	margin-left:25%;
+}
+
+/* Gives every link a unique background color */
+a{
+	color: #F5DF4D;
+	font-weight: bold;
+	text-decoration: none;
+}
+ul {
+	text-align: center;
+	list-style-type: none;
+}
+div.border{
+	background-color: #fbb13c;
+	border: 5px solid black;
+	width:750px;
+	margin: 10px auto;
+	padding: 20px;
+}
+
+

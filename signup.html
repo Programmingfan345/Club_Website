@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="club.css" title="style" />
+		<title>Sign Up Page</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script src="ajax.js" defer></script>
+	</head>
+	
+	<body>
+		<div class="backgroundmenu"><h3><a href ="index.html"> Back to Home Page</a></h3></div>
+		<h1 style="text-align:center">Sign Up</h1>
+		
+		<!-- The information the user submits will be sent to the studentinfo.php file -->
+
+		<form name="studentinfoForm" id="studentinfoForm" action="studentinfo.php" method="GET">
+
+		<!-- The following form collects information on a user's first name, last name, email address, password, and phone number -->
+		<div style = "font-weight: bold">
+			<div style = "clear: both; margin-left: 30%; margin-top: 5px;">First Name: 
+				<input type = "text" name = "firstname" placeholder="Type your first name here" size = "50" maxlength="30" required>
+			</div>
+		
+			<div style = "clear: both; margin-left: 30%; margin-top: 5px;">Last Name: 
+				<input type = "text" name = "lastname" placeholder="Type your last name here" size = "50" maxlength="30" required>
+			</div>
+		
+			<div style = "clear: both; margin-left: 30%; margin-top: 5px;">Email Address: 
+				<input type="text" id="email" name="email" placeholder="Type your email address here" size="50" maxlength="30" required onblur="checkUsernameAvailability()">
+			</div>
+		
+			<div id="usernameFeedback" style="margin-left: 30%; margin-top: 5px; font-size: 14px"></div>
+
+			<div style = "clear: both; margin-left: 30%; margin-top: 5px;">Password: 
+				<input type = "text" name = "password" placeholder="Type your password here" size = "50" maxlength="30" required>
+			</div>
+
+			<div style = "clear: both; margin-left: 30%; margin-top: 5px;">Phone Number: 
+				<input type = "text" name = "phonenumber" placeholder="Type your phone number here" size = "50" maxlength="10" required>
+			</div>
+		</div>
+		
+		<!-- Displays the submit button -->
+		<div style = "clear: both; margin-left: 48%; margin-top: 5px;"><button type="submit" style="padding: 8px 8px; font-weight:bold;">Submit Information</button></div>
+
+
+	</form>
+	</body>
+<html>

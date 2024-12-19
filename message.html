@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="club.css" title="style" />
+	<title>Message Page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+	<body>
+		<!–– The following code gives the "Back to Profile Page" option a distinct background ––>	
+		<div class="backgroundmenu"><h3><a href ="profile.php"> Back to Profile Page</a></h3></div>
+
+		<!–– The following code gives the centers the title "Send a Message" ––>	
+		<h2 style="text-align:center">Send a Message</h2>
+
+		<!–– The following code provides a dropdown menu to allow a user to select a club ––>
+		<form name="messageForm" id="messageForm" action="php-messaging.php" method="POST">	
+			<h3><span style="margin-left:20%">Recipients(Type Full Name e.g John Doe)</span><span style="margin-left:20%">Message </h3>
+			
+			<!–– The following code gives the user the ability to type in a recipient's name ––>
+			<span style="float:left;margin-left:25%">
+				<label>
+					<input type = "text" name = "recipient" size = "25" maxlength="25" placeholder="Type the recipient name here" required>
+				</label>
+			</span>
+
+			<!–– The following code provides a large text area for users to type a long message ––>	
+			<span style="text-align: right; margin-left:12%">
+				<label>			
+					<textarea name="message" rows="8" cols="60" placeholder="Type your message here" required></textarea>
+				</label>
+			</span>
+
+			<!–– The following code provides a send button for the user to submit their message ––>	
+			<div style = "clear: both; margin-left: 48%; margin-top: 5px;"><button type="submit" style="padding: 8px 8px; font-weight:bold;">Send</button></div>
+		</form>
+	</body>
+</html>
